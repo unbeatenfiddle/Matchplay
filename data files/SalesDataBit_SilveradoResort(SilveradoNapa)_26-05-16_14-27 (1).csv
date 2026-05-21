@@ -1,0 +1,244 @@
+﻿Silverado Resort : Sales by Item
+Rpt Date,5/16/2026 2:27:58 PM
+Date Range,5/9/2026 - 5/9/2026
+Time Range,12:00 AM - 11:59 PM
+Class Type,Sales Class
+Cost Centers,02-MatchPlay
+Include Zero Priced Items,Yes
+Major Classes,All
+Major Jobs,All
+Menu Items,All
+Minor Classes,All
+Minor Jobs,All
+Order Status,All
+Report By,User Closed
+Segments,All
+Service Types,All
+Users,All
+
+Minor Class,Menu Item,Quantity,Amount
+Appetizers,Chef's Garden Crudité,1,$20.00
+Appetizers,Duck Confit Croquettes,6,$128.80
+Appetizers,Dungeness Crab Cake,9,$207.50
+Appetizers,Kids Fruit Cup,2,$16.00
+Appetizers,Plain,1,$0.00
+Appetizers,Salt Spring Island Mussels,8,$196.00
+Appetizers,Tempura Oyster Mushrooms,11,$161.60
+Appetizers,Thousand Layer Potato,8,$144.00
+Appetizers,Whipped Farmer's Cheese,3,$47.60
+Beer Bottle,Athletic IPA N/A,2,$12.60
+Beer Bottle,Coors Light BTL,12,$84.00
+Beer Bottle,Stella Btl,4,$25.20
+Beer Bottle,Trumer Pilsner BTL,2,$20.00
+Beer Draft,12oz Almanac Hazy IPA,1,$9.00
+Beer Draft,16oz Big Sur Dipa,2,$22.00
+Beer Draft,16oz Faction Pilsner,1,$8.80
+Beer Draft,16oz Farmers Light Lager,6,$55.00
+Beer Draft,16oz Gummy Worms Hazy,7,$77.00
+Beer Draft,16oz Mighty Cider,1,$11.00
+Beer Draft,16oz Swamis IPA,4,$41.80
+Beer Draft,20oz Big Sur Dipa,1,$11.00
+Beer Draft,20oz Faction Pilsner,5,$50.60
+Beer Draft,20oz Farmers Light Lager,2,$19.80
+Beer Draft,20oz Gummy Worms Hazy,7,$72.60
+Beer Draft,20oz Swamis IPA,5,$50.60
+Beer Draft,22oz STS Pilsner,1,$15.00
+Bourbon Whiskey,Barrel Old Fashioned,5,$83.60
+Bourbon Whiskey,Crown Royal,1,$15.00
+Bourbon Whiskey,Green River Bourbon,4,$56.00
+Bourbon Whiskey,Jack Daniels,1,$12.00
+Bourbon Whiskey,Jameson,2,$24.00
+Bourbon Whiskey,Whistle Pig Farmstock Rye,1,$15.00
+Breakfast Food,Avocado Toast,3,$72.80
+Breakfast Food,Avocado Toast,12,$283.20
+Breakfast Food,BLT Benedict,13,$268.40
+Breakfast Food,Breakfast Grilled Cheese Sandwich,17,$312.00
+Breakfast Food,Egg White Frittata,5,$100.80
+Breakfast Food,Garden Omelet,14,$300.00
+Breakfast Food,Greek Yogurt Parfait,2,$30.00
+Breakfast Food,Lemon Ricotta Waffle,6,$102.60
+Breakfast Food,Steak & Eggs,3,$114.00
+Breakfast Food,Strawberry Shortcake French Toast,5,$88.00
+Breakfast Food,Two Egg Breakfast,26,$545.60
+BTL Chardonnay,Honig SB,1,$91.00
+BTL Other Red,Open Red,6,"$1,598.96"
+BTL Other White,Open White,1,$23.00
+BTL Sparkling Wine,Goldeneye BTL,1,$91.01
+Cordial,Aperol,9,$109.20
+Cordial,Campari,1,$14.00
+Cordial,St. Germain,2,$32.00
+Dessert,Carrot Cake,7,$99.00
+Dessert,Carrot Cake,1,$15.00
+Dessert,Cheesecake,2,$25.20
+Dessert,Chocolate Mousse,8,$99.00
+Dessert,Crème Brûlée,1,$14.00
+Dessert,Crème Brûlée,3,$36.00
+Dessert,Mascarpone Cheesecake,2,$25.20
+Entree Fish,Dungeness Crab Louis,10,$281.60
+Entree Fish,Pan Seared Scallops,9,$393.60
+Entree Fish,Roasted King Salmon,8,$325.60
+Entree Kids,Chocolate Chip Pancakes,4,$57.00
+Entree Kids,Green Eggs & Ham,1,$15.00
+Entree Kids,Kids - Butter Noodles,7,$105.00
+Entree Kids,Kids - Grilled Cheese,1,$15.00
+Entree Kids,Kids Burger,6,$90.00
+Entree Kids,Kids- Chicken Strips,9,$132.00
+Entrée Meat,Bistro Filet Steak Frites,6,$343.00
+Entrée Meat,Double Cut Pork Chop,6,$259.20
+Entrée Meat,Grilled Zabuton Steak,4,$285.00
+Entrée Meat,Matchplay Burger,17,$377.50
+Entrée Meat,Matchplay Short Rib Burger,30,$742.50
+Entrée Meat,Open Food,16,$100.50
+Entrée Meat,Steak Frites,2,$76.00
+Entrée Meat,Tagliatelle Bolognese,11,$301.60
+Entree Poultry,Chicken Pot Pie,13,$366.00
+Entree Poultry,Fried Chicken Sandwich,9,$180.96
+Entree Poultry,Fried Chicken Sandwich,7,$160.00
+Entree Poultry,Two Farm Eggs,2,$44.00
+Entree Vegetarian,Fried Green Tomato Caprese,6,$119.60
+Entree Vegetarian,Parisian Gnocchi,3,$81.00
+Entree Vegetarian,Spring Pea Agnolotti,7,$178.20
+Entree Vegetarian,Wild Mushroom Pappardelle,5,$120.00
+Fire Course,***FIRE***,20,$0.00
+Gin,Barr Hill,1,$16.00
+Gin,Hendrick's,4,$51.00
+Gin,Martin Miller's,6,$81.00
+Gin,The Degroff,1,$19.00
+GLS White Wine,Goldeneye Brut Rosé GLS,3,$63.00
+GLS White Wine,Ink Grade SB GLS,2,$45.00
+GLS Wine ,Barnett SB BTG,1,$20.00
+GLS Wine ,Beringer Cab - BTG,7,$105.00
+GLS Wine ,Bernardus PN - BTG ,3,$61.60
+GLS Wine ,Black Stallion - Cab - BTG ,10,$159.80
+GLS Wine ,Bravium PN - BTG,9,$151.20
+GLS Wine ,Buchaine Chardonnay BTG,10,$184.00
+GLS Wine ,Chandon BTB GLS,1,$23.00
+GLS Wine ,Chandon By the Bay,10,$190.00
+GLS Wine ,Daou BTG,5,$74.80
+GLS Wine ,Goldeneye BTG,8,$129.60
+GLS Wine ,Honig SB BTG,9,$123.00
+GLS Wine ,Honig SB GLS,13,$185.60
+GLS Wine ,Jayson Chardonnay BTG,2,$48.60
+GLS Wine ,Justin Chardonnay BTG,2,$36.00
+GLS Wine ,Mimosa,2,$23.40
+GLS Wine ,Mumm Napa Brut BTG,3,$64.40
+Liqueur,Blueberry Lavender ,6,$106.40
+Liqueur,Cassis Spritz,8,$148.20
+Liqueur,Limoncello Collins,6,$106.40
+Liqueur,Manhattan to Paris,2,$34.20
+Liquor,Bloody Maria,1,$20.00
+Liquor,Open Liquor,3,$51.00
+Liquor,Silverado Mary,3,$50.40
+Liquor Modifiers,(MOD) Do Not Make,4,$0.00
+Liquor Modifiers,(MOD) No,1,$0.00
+Liquor Modifiers,(MOD) On The Side,1,$0.00
+Liquor Modifiers,(MOD) Rare,2,$0.00
+Liquor Modifiers,(MOD) Special Instruction,145,$0.00
+Liquor Modifiers,Large Cube,3,$0.00
+Liquor Modifiers,Split,1,$0.00
+Liquor Prep,Coke,1,$0.00
+Liquor Prep,Cranberry,2,$0.00
+Liquor Prep,Diet Coke,1,$0.00
+Liquor Prep,Dirty,3,$0.00
+Liquor Prep,NUTRL - Orange,1,$7.00
+Liquor Prep,NUTRL - Watermelon,1,$7.00
+Liquor Prep,Rocks,1,$0.00
+Liquor Prep,Spritzer,1,$0.00
+Liquor Prep,Twist,2,$0.00
+N/C Food Mods,(MOD) (Meat Temp) Medium,34,$0.00
+N/C Food Mods,(MOD) Allergy,3,$0.00
+N/C Food Mods,(MOD) Med. Well,8,$0.00
+N/C Food Mods,(MOD) Well Done,1,$0.00
+N/C Food Mods,English Muffin,2,$0.00
+N/C Food Mods,Fingerlings,7,$0.00
+N/C Food Mods,Fruit,3,$0.00
+N/C Food Mods,No Anchovies,2,$0.00
+N/C Food Mods,No Bacon,1,$0.00
+N/C Food Mods,No Cheese,4,$0.00
+N/C Food Mods,No Croutons,1,$0.00
+N/C Food Mods,No Side,7,$0.00
+N/C Food Mods,No Tomato,1,$0.00
+N/C Food Mods,Orange,2,$0.00
+N/C Food Mods,Over Easy,9,$0.00
+N/C Food Mods,Over Medium,11,$0.00
+N/C Food Mods,Poached,1,$0.00
+N/C Food Mods,Poached Med,1,$0.00
+N/C Food Mods,Scrambled,8,$0.00
+N/C Food Mods,See Server,2,$0.00
+N/C Food Mods,Sourdough,17,$0.00
+N/C Food Mods,Sunny Side Up,6,$0.00
+N/C Food Mods,To  Go,23,$0.00
+N/C Food Mods,Wheat,15,$0.00
+N/C Food Mods,White,3,$0.00
+Non-Alcoholic Beverage,(MOD) Med. Rare,17,$0.00
+Non-Alcoholic Beverage,2% Milk,1,$6.00
+Non-Alcoholic Beverage,Apple Juice,3,$18.00
+Non-Alcoholic Beverage,Arnold Palmer,5,$22.00
+Non-Alcoholic Beverage,Cassis Sparkler N/A,2,$24.00
+Non-Alcoholic Beverage,Cherry Sparkler N/A,1,$12.00
+Non-Alcoholic Beverage,Coffee,34,$159.50
+Non-Alcoholic Beverage,Coke,4,$19.00
+Non-Alcoholic Beverage,Diet Coke,14,$62.00
+Non-Alcoholic Beverage,Grapefruit Juice,1,$6.00
+Non-Alcoholic Beverage,Grill Cappuccino,11,$66.00
+Non-Alcoholic Beverage,Grill Espresso,1,$5.00
+Non-Alcoholic Beverage,Hot Tea,2,$10.00
+Non-Alcoholic Beverage,Iced Tea,11,$51.00
+Non-Alcoholic Beverage,Latte,4,$24.00
+Non-Alcoholic Beverage,Lemonade,3,$15.00
+Non-Alcoholic Beverage,N/A,2,$16.00
+Non-Alcoholic Beverage,Oat Milk,5,$5.00
+Non-Alcoholic Beverage,Orange Juice,6,$34.80
+Non-Alcoholic Beverage,Sprite,5,$25.00
+Non-Alcoholic Beverage,Whole Milk,8,$0.00
+Priced Bev Mods,Add Shot,7,$14.00
+Priced Food Mod,Add Avocado,1,$4.80
+Priced Food Mod,Add Bacon,1,$4.80
+Priced Food Mod,Add Cheese,2,$4.00
+Priced Food Mod,Add Egg,2,$4.80
+Priced Food Mod,Grilled Chicken,13,$115.99
+Priced Food Mod,Salmon,2,$30.60
+Priced Food Mod,Shrimp,2,$21.60
+Priced Food Mod,Side Caesar,1,$2.50
+Priced Liquor Mods,Bloody,5,$18.40
+Priced Liquor Mods,Boulvadier,3,$9.72
+Priced Liquor Mods,Espresso Martini,5,$16.28
+Priced Liquor Mods,Gimlet,2,$0.00
+Priced Liquor Mods,Lemon Drop,1,$2.58
+Priced Liquor Mods,Margarita,5,$16.10
+Priced Liquor Mods,Martini,12,$38.49
+Priced Liquor Mods,Negroni,1,$3.46
+Priced Liquor Mods,Old Fashioned,1,$3.22
+Priced Liquor Mods,Paloma,3,$9.63
+Priced Liquor Mods,Pickle Olive,1,$2.58
+Priced Liquor Mods,Spritz,9,$27.34
+Priced Liquor Mods,Sunrise,2,$5.88
+Priced Liquor Mods,Up,16,$42.18
+Priced Liquor Mods,Vesper,1,$3.68
+Rum,Don Q,1,$9.60
+Salad & Soup,Asparagus Soup,6,$69.60
+Salad & Soup,Burrata & Asparagus Salad,17,$310.00
+Salad & Soup,Matchplay Caesar,29,$462.60
+Salad & Soup,Strawberry Panzanella,5,$81.70
+Sides,add 2 egg,2,$16.00
+Sides,Applewood Bacon,11,$28.00
+Sides,Breakfast Potatoes,2,$20.00
+Sides,Chicken Apple Sausage,13,$25.00
+Sides,Chicken Apple Sausage Links,2,$0.00
+Sides,Fries,85,$0.00
+Sides,Fruit,4,$48.00
+Sides,Garlic Confit Potato Purée,2,$21.60
+Sides,House Fries,19,$216.00
+Sides,One Hen Pen Farm Egg,1,$4.00
+Sides,Plain Bagel ,1,$4.80
+Sides,Tempura Prawns,1,$22.00
+Sides,Toast,9,$46.20
+Tequila,Don Julio Blanco,2,$28.00
+Tequila,Herradura Silver,8,$112.00
+Tequila,Sour Cherry Margarita,13,$228.00
+Vodka,Chopin,2,$32.00
+Vodka,Grey Goose,6,$86.40
+Vodka,Hanson,22,$266.00
+Vodka,Ketel One,4,$47.60
+Vodka,Tito's,17,$252.80
+Total,,1501,"$17,159.36"
