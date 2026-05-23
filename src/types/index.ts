@@ -72,3 +72,18 @@ export interface AggregatedItem {
   pctOfTotal: number;
   foodOrBev: 'food' | 'beverage' | 'other';
 }
+
+export interface WineCostEntry {
+  normalizedItem: string;
+  bottleCost: number;
+  pourOz: number;
+}
+
+export type WineCostMap = Record<string, WineCostEntry>;
+
+export interface WineCostKpis {
+  wineRevenue: number;
+  wineCogs: number;
+  wineCostPct: number;
+  coveredRevenuePct: number;
+}

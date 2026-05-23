@@ -6,20 +6,23 @@ import { useData } from '@/context/DataContext';
 function getMissingDays(loadedDates: string[]): string[] {
   if (loadedDates.length === 0) return [];
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const yesterday = new Date(today);
-  yesterday.setDate(yesterday.getDate() - 1);
+  // Build yesterday's ISO string in local timezone to avoid UTC-vs-local mismatch
+  const now = new Date();
+  const localYesterday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1);
+  const yesterdayISO = [
+    localYesterday.getFullYear(),
+    String(localYesterday.getMonth() + 1).padStart(2, '0'),
+    String(localYesterday.getDate()).padStart(2, '0'),
+  ].join('-');
 
-  const earliest = new Date(loadedDates[0] + 'T12:00:00Z');
   const loaded = new Set(loadedDates);
   const missing: string[] = [];
 
-  const cursor = new Date(earliest);
-  cursor.setUTCHours(12, 0, 0, 0);
-
-  while (cursor <= yesterday) {
+  // Walk from earliest loaded date to yesterday using UTC noon (avoids DST jumps)
+  const cursor = new Date(loadedDates[0] + 'T12:00:00Z');
+  while (true) {
     const iso = cursor.toISOString().slice(0, 10);
+    if (iso > yesterdayISO) break;
     if (!loaded.has(iso)) missing.push(iso);
     cursor.setUTCDate(cursor.getUTCDate() + 1);
   }

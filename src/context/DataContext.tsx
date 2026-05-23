@@ -1,10 +1,10 @@
 'use client';
 
 import React, { createContext, useContext, useReducer, useMemo, useEffect, useCallback } from 'react';
-import { DailyFile, SalesRow, AppFilters } from '@/types';
+import { DailyFile, SalesRow, AppFilters, WineCostEntry, WineCostMap } from '@/types';
 import { mergeFiles } from '@/lib/dataStore';
 import { parseCSVText, parseCSVFile } from '@/lib/csvParser';
-import { loadStoredFiles, addStoredFile } from '@/lib/localStorage';
+import { loadStoredFiles, addStoredFile, saveWineCosts, loadWineCosts } from '@/lib/localStorage';
 
 interface DataState {
   files: DailyFile[];
@@ -12,6 +12,7 @@ interface DataState {
   filters: AppFilters;
   loading: boolean;
   uploadErrors: string[];
+  wineCosts: WineCostMap;
 }
 
 type Action =
@@ -21,7 +22,10 @@ type Action =
   | { type: 'SET_CATEGORY_FILTER'; categories: string[] }
   | { type: 'CLEAR_FILTERS' }
   | { type: 'SET_UPLOAD_ERRORS'; errors: string[] }
-  | { type: 'SET_LOADING'; loading: boolean };
+  | { type: 'SET_LOADING'; loading: boolean }
+  | { type: 'SET_WINE_COST'; entry: WineCostEntry }
+  | { type: 'DELETE_WINE_COST'; normalizedItem: string }
+  | { type: 'LOAD_WINE_COSTS_BULK'; costs: WineCostMap };
 
 function buildAllRows(files: DailyFile[]): SalesRow[] {
   return files.flatMap(f => f.rows);
@@ -33,6 +37,7 @@ const initialState: DataState = {
   filters: { selectedDates: [], selectedCategories: [] },
   loading: true,
   uploadErrors: [],
+  wineCosts: {},
 };
 
 function reducer(state: DataState, action: Action): DataState {
