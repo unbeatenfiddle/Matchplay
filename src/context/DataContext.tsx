@@ -60,6 +60,17 @@ function reducer(state: DataState, action: Action): DataState {
       return { ...state, uploadErrors: action.errors };
     case 'SET_LOADING':
       return { ...state, loading: action.loading };
+    case 'SET_WINE_COST': {
+      const wineCosts = { ...state.wineCosts, [action.entry.normalizedItem]: action.entry };
+      return { ...state, wineCosts };
+    }
+    case 'DELETE_WINE_COST': {
+      const wineCosts = { ...state.wineCosts };
+      delete wineCosts[action.normalizedItem];
+      return { ...state, wineCosts };
+    }
+    case 'LOAD_WINE_COSTS_BULK':
+      return { ...state, wineCosts: action.costs };
     default:
       return state;
   }
@@ -79,6 +90,8 @@ interface DataContextValue {
   availableCategories: string[];
   dispatch: React.Dispatch<Action>;
   uploadFiles: (files: File[]) => Promise<UploadResult[]>;
+  setWineCost: (entry: WineCostEntry) => void;
+  deleteWineCost: (normalizedItem: string) => void;
 }
 
 const DataContext = createContext<DataContextValue | null>(null);
@@ -109,6 +122,21 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
     () => Array.from(new Set(state.allRows.map(r => r.category))).sort(),
     [state.allRows]
   );
+
+  const setWineCost = useCallback((entry: WineCostEntry) => {
+    dispatch({ type: 'SET_WINE_COST', entry });
+  }, []);
+
+  const deleteWineCost = useCallback((normalizedItem: string) => {
+    dispatch({ type: 'DELETE_WINE_COST', normalizedItem });
+  }, []);
+
+  // Persist wine costs whenever they change (skip initial loading state)
+  useEffect(() => {
+    if (!state.loading) {
+      saveWineCosts(state.wineCosts);
+    }
+  }, [state.wineCosts, state.loading]);
 
   const uploadFiles = useCallback(async (files: File[]): Promise<UploadResult[]> => {
     const results: UploadResult[] = [];
@@ -159,6 +187,12 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
           );
           dispatch({ type: 'ADD_UPLOADED_FILES', files: restored });
         }
+
+        // Restore wine costs from localStorage
+        const storedCosts = loadWineCosts();
+        if (Object.keys(storedCosts).length > 0) {
+          dispatch({ type: 'LOAD_WINE_COSTS_BULK', costs: storedCosts });
+        }
       } catch (e) {
         console.error('Failed to load data:', e);
         dispatch({ type: 'SET_LOADING', loading: false });
@@ -168,7 +202,7 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ state, filteredRows, availableDates, availableCategories, dispatch, uploadFiles }}>
+    <DataContext.Provider value={{ state, filteredRows, availableDates, availableCategories, dispatch, uploadFiles, setWineCost, deleteWineCost }}>
       {children}
     </DataContext.Provider>
   );

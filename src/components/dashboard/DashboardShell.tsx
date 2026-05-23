@@ -12,6 +12,8 @@ import { BestSellersSection } from './BestSellersSection';
 import { FullItemsTable } from './FullItemsTable';
 import { UploadZone } from './UploadZone';
 import { MissingDaysBanner } from './MissingDaysBanner';
+import { WineKpiRow } from './WineKpiRow';
+import { WineCostEditor } from './WineCostEditor';
 
 function Skeleton({ h = 'h-40' }: { h?: string }) {
   return <div className={`bg-gray-100 rounded-xl animate-pulse ${h}`} />;
@@ -98,8 +100,14 @@ export function DashboardShell() {
           </div>
         )}
 
+        {/* Wine Cost KPIs — only renders when costs are entered */}
+        {!state.loading && <WineKpiRow />}
+
         {/* Full Items Table */}
         {state.loading ? <Skeleton h="h-96" /> : <FullItemsTable />}
+
+        {/* Wine Cost Editor */}
+        {!state.loading && <WineCostEditor />}
       </main>
     </div>
   );
